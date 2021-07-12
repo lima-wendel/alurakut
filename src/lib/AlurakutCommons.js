@@ -55,6 +55,7 @@ export function AlurakutMenu({ githubUser }) {
 AlurakutMenu.Wrapper = styled.header`
   width: 100%;
   background-color: #308BC5;
+
   .alurakutMenuProfileSidebar {
     background: white;
     position: fixed;
@@ -85,6 +86,7 @@ AlurakutMenu.Wrapper = styled.header`
       text-decoration: none;
       font-weight: 800;
     }
+
     hr {
       margin-top: 12px;
       margin-bottom: 8px;
@@ -92,6 +94,7 @@ AlurakutMenu.Wrapper = styled.header`
       border-bottom-color: #ECF2FA;
     }
   }
+
   .container {
     background-color: #308BC5;
     padding: 7px 16px;
@@ -104,6 +107,7 @@ AlurakutMenu.Wrapper = styled.header`
     @media(min-width: 860px) {
       justify-content: flex-start;
     }
+
     button {
       border: 0;
       background: transparent;
@@ -113,6 +117,7 @@ AlurakutMenu.Wrapper = styled.header`
         display: none;
       }
     }
+
     nav {
       display: none;
       @media(min-width: 860px) {
@@ -334,6 +339,8 @@ const AlurakutLoginScreen = css`
     --textQuarternaryColor: #C5C6CA;
     --commonRadius: 8px;
   }
+
+
   .loginScreen {
     padding: 16px;
     max-width: 1110px;
@@ -496,67 +503,6 @@ export const AlurakutStyles = css`
       box-shadow: 0px 0px 5px #33333357;
     }
   }
+  
   ${AlurakutLoginScreen}
 `;
-Raw
-box.js
-import styled from 'styled-components';
-
-const Box = styled.div`
-  background: #FFFFFF;
-  border-radius: 8px;
-  padding: 16px;
-  /* CSS Pré-Pronto */
-  margin-bottom: 10px;
-  .boxLink {
-    font-size: 14px;
-    color: #2E7BB4;
-    text-decoration: none;
-    font-weight: 800;
-  }
-  .title {
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-  .subTitle {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-  .smallTitle {
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #333333;
-    margin-bottom: 20px;
-  }
-  hr {
-    margin-top: 12px;
-    margin-bottom: 8px;
-    border-color: transparent;
-    border-bottom-color: #ECF2FA;
-  }
-  input {
-    width: 100%;
-    background-color: #F4F4F4;
-    color: #333333;
-    border: 0;
-    padding: 14px 16px;
-    margin-bottom: 14px;
-    border-radius: 10000px;
-    ::placeholder {
-      color: #333333;
-      opacity: 1;
-    }
-  }
-  button {
-    border: 0;
-    padding: 8px 12px;
-    color: #FFFFFF;
-    border-radius: 10000px;
-    background-color: #6F92BB;
-  }
-`; 
-
-export default Box
